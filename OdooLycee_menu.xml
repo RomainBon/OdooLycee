@@ -2,13 +2,21 @@
 <openerp>
     <data>
         <!-- Top menu item -->
-        <menuitem name="Client" id="menu_model_root" groups="group_model_member" sequence="80" />
-        
+        <menuitem name="lycee" id="menu_model_root" groups="group_model_member" sequence="80" />
+
         <!-- Menu Modele / Configuration -->
         <menuitem id="menu_modele_config" parent="menu_model_root"
-            name="Configuration" sequence="16"/>
-            
-            <menuitem id="menu_res_company_admin" parent="menu_modele_config"
-                action="base.action_res_company_form" sequence="10" name="Société"/>
+                name="Gestion" sequence="16"/>
+            <menuitem id="menu_iut_agenda" parent="menu_modele_config"
+                action="iut_agenda_action" sequence="11" name="Agenda"/>
+            <menuitem id="menu_iut_classe" parent="menu_modele_config"
+                action="iut_classe_action" sequence="12" name="Classe"/>
+            <menuitem id="menu_iut_cours" parent="menu_modele_config"
+                action="iut_cours_action" sequence="13" name="Cours"/>
+            <menuitem id="menu_iut_eleve" parent="menu_modele_config"
+                action="iut_eleve_action" sequence="14" name="Eleves"/>
+            <menuitem id="menu_iut_professeur" parent="menu_modele_config"
+                action="iut_professeur_action" sequence="15" name="Professeurs"/>
+
     </data>
 </openerp>

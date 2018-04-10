@@ -24,6 +24,11 @@
 
     # always loaded
     'data': [
+        'views/iut_agenda_views.xml',
+        'views/iut_classe_views.xml',
+        'views/iut_cours_views.xml',
+        'views/iut_eleve_views.xml',
+        'views/iut_professeur_views.xml',
         'security/tdsimodel_security.xml',
         'datas/datas.xml',
         'views/views.xml',
